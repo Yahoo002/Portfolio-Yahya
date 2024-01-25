@@ -14,8 +14,6 @@ import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import { useState } from 'react';
 
-
-
 export default function Home() {
   const [darkMode, setDarkMode] = useState(false);
   return (
