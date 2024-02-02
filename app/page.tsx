@@ -13,9 +13,10 @@ import web4 from '../public/web4.png';
 import web5 from '../public/web5.png';
 import web6 from '../public/web6.png';
 import { useState } from 'react';
+import TypingComponent from './typewriter';
 
 export default function Home() {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
   return (
     <div className={darkMode ? "dark": ""}>
      <main className="bg-white px-10 md:px-20 lg:px-40 dark:bg-gray-900">
@@ -29,7 +30,7 @@ export default function Home() {
         </nav>
         <div className="text-center p-10">
           <h2 className="text-5xl py-2 text-teal-600 font-medium md:text-6xl">Yahya Aseerullah</h2>
-          <h3 className="text-2xl py-2 md:text-3xl dark:text-white">Cloud Solutions Architect | Developer | AvGeek | Polyglot</h3>
+          <h3 className=" text-2xl py-10 md:text-3xl dark:text-white"> <TypingComponent/></h3>
           <p className="text-md py-5 leading-8 text-gray-700 md:text-xl max-w-xl mx-auto dark:text-white ">&& Insert 2 liner info about me Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis nesciunt &&</p>
         </div>
         <div className="text-5xl flex justify-center gap-16 py-2 pb-10 text-gray-600">

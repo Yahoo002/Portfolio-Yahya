@@ -39,6 +39,24 @@ body {
   src: url("../public/inconsolata.ttf");
 }
 
+@keyframes typewriter {
+  0% { width: 0; }
+  100% { width: 100%; }
+}
+
+@keyframes blink {
+  0% { opacity: 1; }
+  50% { opacity: 0; }
+  100% { opacity: 1; }
+}
+
+.typewriter-text {
+  border-right: 2px solid;
+  white-space: nowrap;
+  overflow: hidden;
+  animation: typewriter 4s steps(44) infinite, blink 1s step-end infinite;
+}
+
 /* a {
   color: teal;
 }
