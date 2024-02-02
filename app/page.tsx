@@ -15,6 +15,8 @@ import web6 from '../public/web6.png';
 import { useState } from 'react';
 import TypingComponent from './typewriter';
 
+
+
 export default function Home() {
   const [darkMode, setDarkMode] = useState(true);
   return (
